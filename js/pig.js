@@ -6,6 +6,14 @@ window.addEventListener('load', function() {
         style.innerHTML = '.slide {display:block;' +
             'height:' + window.innerHeight + 'px;}';
     }
+
+    function next() {
+        go(++cur);
+    }
+    function prev() {
+        go(Math.max(0, --cur));
+    }
+
     w.addEventListener('resize', set);
     w.addEventListener('scroll', function update(e) {
         cur = Math.floor(w.scrollY / w.innerHeight);
@@ -17,11 +25,11 @@ window.addEventListener('load', function() {
     });
     d.addEventListener('keydown', function(e) {
         if (e.which === 39 || e.which === 34) {
-            go(Math.min(++cur));
+            next();
             e.preventDefault();
         }
         if (e.which === 37 || e.which === 33) {
-            go(Math.max(0, --cur));
+            prev();
             e.preventDefault();
         }
     });
@@ -32,4 +40,15 @@ window.addEventListener('load', function() {
     window.onhashchange = function() { if (hash() !== cur) go(hash()); };
     set();
     go(cur);
+
+    if (Hammer) {
+        var hammertime = new Hammer(document.body, {});
+        hammertime.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
+        hammertime.on('swiperight', function (ev) {
+            prev();
+        });
+        hammertime.on('swipeleft', function (ev) {
+            next();
+        });
+    }
 });

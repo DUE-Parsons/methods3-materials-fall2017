@@ -14,7 +14,10 @@ window.addEventListener('load', function() {
         go(Math.max(0, --cur));
     }
 
-    w.addEventListener('resize', set);
+    w.addEventListener('resize', function () {
+        set();
+        go(cur);
+    });
     w.addEventListener('scroll', function update(e) {
         cur = Math.floor(w.scrollY / w.innerHeight);
         if (w.location.hash !== cur) w.location.hash = cur;
@@ -43,12 +46,19 @@ window.addEventListener('load', function() {
 
     if (Hammer) {
         var hammertime = new Hammer(document.body, {});
-        hammertime.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
+        hammertime.get('pan').set({ direction: Hammer.DIRECTION_VERTICAL });
+
+        hammertime.on('pandown panup', function (e) {
+            e.gesture.preventDefault();
+        });
+
         hammertime.on('swiperight', function (ev) {
             prev();
+            ev.gesture.preventDefault();
         });
         hammertime.on('swipeleft', function (ev) {
             next();
+            ev.gesture.preventDefault();
         });
     }
 });

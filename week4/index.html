@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class 4 | Methods 3</title>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans' rel='stylesheet' type='text/css'>
+
+        <link href="../css/pig.css" rel="stylesheet" type="text/css" />
+        <link href="../css/base.css" rel="stylesheet" />
+
+        <script src="../js/hammer.min.js"></script>
+        <script src="../js/pig.js"></script>
+    </head>
+    <body>
+
+        <div class="slide">
+            <p>Welcome to Methods 3, Lecture 4</p>
+            <p>This is a web page that can be viewed as slides.</p>
+            <p>→ to move forward</p>
+            <p>← to go back</p>
+        </div>
+
+        <div class="slide">
+            <h1>Methods 3</h1>
+        </div>
+
+        <div class="slide">
+            <h2>(review)</h2>
+        </div>
+
+        <div class="slide">
+            <h2>Choropleth?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/smoking_rates.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/new_boot.jpeg);">
+            <a class="source" href="https://medium.com/matter/louisiana-loses-its-boot-b55b3bd52d1e">
+                source
+            </a>
+            <h2>Louisiana Loses Its Boot</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/la_all_land.png);">
+        </div>
+
+        <div class="slide">
+            <p>"Using publicly available data, [we] created a map on which areas that commonly appear as land on government issued maps—woody wetlands, emergent herbaceous wetlands and barren land—were re-<strong>categorized</strong> to appear as water."</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/la_walkable_land.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/new_boot.jpeg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/flint-zip-codes.png);">
+            <a class="source" href="https://theconversation.com/how-zip-codes-nearly-masked-the-lead-problem-in-flint-65626">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/flint-zip-codes-misaligned.jpg);">
+            <a class="source" href="https://theconversation.com/how-zip-codes-nearly-masked-the-lead-problem-in-flint-65626">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/flint-zip-codes-misaligned.jpg);">
+            <h2>the modifiable areal unit problem</h2>
+            <a class="source" href="https://theconversation.com/how-zip-codes-nearly-masked-the-lead-problem-in-flint-65626">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/flint-zip-codes-misaligned.jpg);">
+            <p style="background-color: rgba(255, 255, 255, 0.7);">"One-third of all homes with a Flint ZIP code lie outside the city. Thus, the state’s numbers for Flint were watered down by an additional 50 percent of addresses that weren’t in the city and weren’t using Flint water."</p>
+            <a class="source" href="https://theconversation.com/how-zip-codes-nearly-masked-the-lead-problem-in-flint-65626">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/spiral-polar-projection.jpg);">
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide" style="background-image: url(img/qualitative-maha.png);">
+            <span style="background: white; float: right;">Maha</span>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qualitative-angelica.png);">
+            <span style="background: white; float: right;">Angelica</span>
+        </div>
+
+        <div class="slide" style="background-image: url(img/quantitative-caroline.png);">
+            <span style="background: white; float: right;">Caroline</span>
+        </div>
+
+        <div class="slide" style="background-image: url(img/quantitative-andrew.png);">
+            <span style="background: white; float: right;">Andrew</span>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>Start thinking about <strong>methodology</strong></h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc_taxi.png);">
+            <a class="source" href="http://nyctaxi.herokuapp.com/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc_taxi_about.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc_taxi_asterisks.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/syrian_refugees.png);">
+            <a class="source" href="http://projects.aljazeera.com/2013/syrias-refugees/#41.14281187285864/-78.0622561275959">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/syrian_refugees_source.png);">
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h1>Finding data</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc_open_data.png);">
+            <a class="source" href="http://data.cityofnewyork.us">data.cityofnewyork.us</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/bytes.png);">
+            <a class="source" href="http://nyc.gov/html/dcp/html/bytes/applbyte.shtml">bytes of the big apple</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/data_gov.png);">
+            <a class="source" href="http://data.gov">data.gov</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/american_factfinder.png);">
+            <a class="source" href="http://factfinder2.census.gov">american factfinder</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/world_databank.png);">
+            <a class="source" href="http://databank.worldbank.org">databank.worldbank.org</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/earthquake_search.png);">
+            <a class="source" href="http://earthquake.usgs.gov/earthquakes/search">USGS earthquake data</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/methods-3-data.png);">
+            <a class="source" href="https://docs.google.com/document/d/1Vyz1hfKn4OWW8BJA9z_VNjnE9glziQ2I4CqwPIrwksk/edit#heading=h.7ixjrcyzxtbq">google docs</a>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h1>joins</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/grafting.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/grafting.jpg);">
+            <h1>joins relate two datasets to each other</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/graft-potato-tomato.jpg);">
+            <a class="source" href="http://motherboard.vice.com/read/why-does-the-tomato-potato-plant-exist">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/graft-potato-tomato.jpg);">
+            <h1>joins create new hybrid datasets</h1>
+            <a class="source" href="http://motherboard.vice.com/read/why-does-the-tomato-potato-plant-exist">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/ketchup-n-fries.jpg);">
+            <a class="source" href="https://diybackyardfarm.com/2015/06/03/have-you-seen-this-cool-plant/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_results.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_results.png);">
+            <h1>"I have this spreadsheet I want to map..."</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_tracts.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_tracts.png);">
+            <h1>you need a file with relatable geographies</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_ids.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_ids.png);">
+            <h1>and a column in each file that relates the two</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/taxi_map.gif);">
+            <a class="source" href="http://nyctaxi.herokuapp.com/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/taxis_and_rainbows.png);">
+            <a class="source" href="https://medium.com/@vijayp/of-taxis-and-rainbows-f6bc289679a1">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/taxis_celebrities_medallion.png);">
+            <a class="source" href="http://gawker.com/the-public-nyc-taxicab-database-that-accidentally-track-1646724546">
+                source
+            </a>
+        </div>
+
+        <div class="slide">
+            <h2>lab</h2>
+            <a href="inclass.html">in-class exercises, part 1</a>
+        </div>
+
+        <div class="slide">
+            <h2>Spatial Joins</h2>
+            <p>When you have layers that both have geographic features</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-join-by-location.png);">
+        </div>
+
+        <div class="slide">
+            <p>Works best when you have:</p>
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>polygons that don't overlap and</li>
+                <li>points or smaller polygons that fall within them</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>lab</h2>
+            <a href="inclass.html">in-class exercises, part 2</a>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>What is a GIS for?</h2>
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>Viewing geodata</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>What is a GIS for?</h2>
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>Viewing geodata</li>
+                <li>Styling geodata</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>What is a GIS for?</h2>
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>Viewing geodata</li>
+                <li>Styling geodata</li>
+                <li>Modifying geodata</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>What is a GIS for?</h2>
+            <ul style="list-style: disc; padding-left: 50px;">
+                <li>Viewing geodata</li>
+                <li>Styling geodata</li>
+                <li>Modifying geodata</li>
+                <li>Understanding / analyzing geodata</li>
+            </ul>
+        </div>
+
+        <div class="slide">
+            <h2>Geoprocessing</h2>
+        </div>
+
+        <div class="slide">
+            <h2>buffers</h2>
+        </div>
+
+        <div class="slide">
+            <h2>buffers</h2>
+            <p>make a "buffer" around features</p>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fig9-26.gif);">
+            <a class="source" href="http://www.paulbolstad.net/gisbook.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-buffer.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/fig9-31.gif);">
+            <a class="source" href="http://www.paulbolstad.net/gisbook.html">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>you can make negative buffers</h2>
+        </div>
+
+        <div class="slide">
+            <h2>overlay operations</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/set_operations.gif);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/fig9-32.png);">
+            <a class="source" href="http://www.paulbolstad.net/gisbook.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fig9-35.png);">
+            <a class="source" href="http://www.paulbolstad.net/gisbook.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-geoprocessing.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/intersect.gif);">
+            <h2>Intersect</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoprocessing_shapes.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoprocessing_intersect.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoprocessing_intersect_alone.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/union.png);">
+            <h2>Union</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoprocessing_union.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoprocessing_union_table.png);">
+        </div>
+
+        <div class="slide">
+            <h2>Symmetric difference</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoprocessing_symdiff.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoprocessing_symdiff_alone.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/geoprocessing_symdiff_table.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/fig9-43.png);">
+            <a class="source" href="http://www.paulbolstad.net/gisbook.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/la-parks.png);">
+            <a class="source" href="http://lacountyparkneeds.org/final-report/">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>usually you'll use geoprocessing functions in a chain</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fig9-1.png);">
+            <a class="source" href="http://www.paulbolstad.net/gisbook.html">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fig9-1.png);">
+            <h2>keep track of these as you work!</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-processing-toolbox-menu.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-processing-toolbox.png);">
+        </div>
+
+        <div class="slide">
+            <h2>lab</h2>
+            <a href="inclass.html">in-class exercises, part 3</a>
+        </div>
+
+    </body>
+</html>

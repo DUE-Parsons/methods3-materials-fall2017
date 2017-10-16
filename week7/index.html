@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Class 7 | Methods 3</title>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <link href='https://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans' rel='stylesheet' type='text/css'>
+
+        <link href="../css/pig.css" rel="stylesheet" type="text/css" />
+        <link href="../css/base.css" rel="stylesheet" />
+
+        <script src="../js/hammer.min.js"></script>
+        <script src="../js/pig.js"></script>
+    </head>
+    <body>
+
+        <div class="slide">
+            <p>Welcome to Methods 3, Lecture 7</p>
+            <p>This is a web page that can be viewed as slides.</p>
+            <p>→ to move forward</p>
+            <p>← to go back</p>
+        </div>
+
+        <div class="slide">
+            <h1>Methods 3</h1>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>georeferencing?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapping-inequality.png);">
+            <a href="https://dsl.richmond.edu/panorama/redlining/#loc=10/41.9437/-87.7045&opacity=0.8&city=chicago-il" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapping-inequality-hover.png);">
+            <a href="https://dsl.richmond.edu/panorama/redlining/#loc=10/41.9437/-87.7045&opacity=0.8&city=chicago-il" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mapping-inequality-download.png);">
+            <a href="https://dsl.richmond.edu/panorama/redlining/#loc=10/41.9437/-87.7045&opacity=0.8&city=chicago-il" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/wapo-puerto-rico.png);">
+            <a href="https://www.washingtonpost.com/graphics/2017/national/puerto-rico-hurricane-recovery/" class="source">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/assignment-emily-1.png);">
+            <span style="background: white; float: right;">Emily</span>
+        </div>
+
+        <div class="slide" style="background-image: url(img/assignment-emily.png);">
+            <span style="background: white; float: right;">Emily</span>
+        </div>
+
+        <div class="slide" style="background-image: url(img/assignment-angelica-1.png);">
+            <span style="background: white; float: right;">Angelica</span>
+        </div>
+
+        <div class="slide" style="background-image: url(img/assignment-angelica-2.png);">
+            <span style="background: white; float: right;">Angelica</span>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide" style="background-image: url(img/conversation-eduarda.png);">
+            <span style="background: white; float: right;">Eduarda</span>
+            <a class="source" style="bottom: 80px;" href="https://www.nexojornal.com.br/interativo/2017/09/25/Compare-a-densidade-populacional-das-cidades-neste-mapa-interativo?utm_source=socialbttns&utm_medium=article_share&utm_campaign=self">source</a>
+            <a class="source" href="http://www.slate.com/articles/life/culturebox/2014/10/population_map_use_our_interactive_map_to_figure_out_how_many_flyover_states.html">original</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/conversation-jason.png);">
+            <span style="background: white; float: right;">Jason</span>
+            <a class="source" href="img/BAB_Example_Focus.pdf">full size</a>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide">
+            <h2>what is the census?</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_2010.jpg);">
+            <a class="source" href="http://www.census.gov/1940census/">source</a>
+        </div>
+
+        <div class="slide">
+            <h2>decennial census</h2>
+        </div>
+
+        <div class="slide">
+            <h2>American Community Survey</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/acs_computers.png);">
+            <a class="source" href="http://www.pewresearch.org/fact-tank/2014/09/19/census-computer-ownership-internet-connection-varies-widely-across-u-s/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/acs_disabilities.jpg);">
+            <a class="source" href="https://usodep.blogs.govdelivery.com/2013/11/12/american-community-survey-statistics-help-you-learn-about-people-with-disabilities-in-your-community/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/acs_commute.png);">
+            <a class="source" href="http://www.bikewalkalliance.org/blog/248-why-biking-a-walking-advocates-love-and-hate-the-census">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/acs_features.png);">
+            <a class="source" href="https://www.census.gov/programs-surveys/acs/guidance/estimates.html">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/margin_of_error.png);">
+            <h2>margin of error: higher with 1-year estimates and smaller geometries</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census-hard-to-count.png);">
+            <a class="source" href="http://www.censushardtocountmaps2020.us/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_reporter.png);">
+            <a class="source" href="http://censusreporter.org/">census reporter</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/social_explorer.png);">
+            <a class="source" href="http://www.socialexplorer.com/">social explorer</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc_census_factfinder.png);">
+            <a class="source" href="http://gis.nyc.gov/census/">NYC Census FactFinder</a>
+        </div>
+
+        <div class="slide">
+            <h2>no matter which data you download, you'll need appropriate geographies to go with it</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/blocks_sf_city.jpg);">
+            <a class="source" href="http://www.datapointed.net/2012/04/parts-and-parcels-us-census-block-maps/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/blocks_sf_city.jpg);">
+            <h2><em>census blocks</em> are the smallest area data is aggregated to</h2>
+            <a class="source" href="http://www.datapointed.net/2012/04/parts-and-parcels-us-census-block-maps/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/blocks_winter_haven.jpg);">
+            <a class="source" href="http://www.datapointed.net/visualizations/maps/census-blocks/winter-haven-florida/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nobody_lives_here.jpg);">
+            <a class="source" href="http://tumblr.mapsbynik.com/post/82791188950/nobody-lives-here-the-nearly-5-million-census">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_small_area_geography.jpg);">
+            <a class="source" href="http://libguides.mit.edu/c.php?g=176332&p=1158607">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/blocks.png);">
+            <h2>blocks</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/block_groups.png);">
+            <h2>block groups</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tracts.png);">
+            <h2>tracts</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/tracts.png);">
+            <h2>tracts have population between 1,200 and 8,000, optimally 4,000</h2>
+            <a class="source" href="https://www.census.gov/geo/reference/gtc/gtc_ct.html">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_hierarchy.jpg);">
+            <a class="source" href="http://blog.datapolitan.com/2013/08/18/census-sample-survey-tract-block-zip-code/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_boundary_files.png);">
+            <a class="source" href="https://www.census.gov/geo/maps-data/data/tiger-cart-boundary.html">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc_ntas.png);">
+            <a class="source" href="http://www.nyc.gov/html/dcp/html/bytes/dwn_nynta.shtml">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc_ntas.png);">
+            <h2>NTAs are NYC-specific aggregations of census tracts</h2>
+            <a class="source" href="http://www1.nyc.gov/site/planning/data-maps/open-data/dwn-nynta.page">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nyc_ntas_shp.png);">
+        </div>
+
+        <div class="slide">
+            <h2>downloading census data</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/factfinder_1.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/factfinder_2.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/factfinder_3.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/factfinder_4.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/factfinder_5.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/factfinder_6.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/factfinder_7.png);">
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 1</a></h2>
+        </div>
+
+        <div class="slide">
+            <h2>joining census data</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_boundary_files.png);">
+            <h2>make sure you have the right boundary files</h2>
+            <a class="source" href="https://www.census.gov/geo/maps-data/data/tiger-cart-boundary.html">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_join.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/census_join.png);">
+            <h2><code>AFFGEGOID</code> and <code>GEOID</code> should be join-able</h2>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 2</a></h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nhgis.png);">
+            <a class="source" href="https://nhgis.org/">
+                NHGIS
+            </a>
+        </div>
+
+        <div class="slide intermission">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto.png);">
+            <a class="source" href="https://carto.com/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/cartodb-instagram-of-maps.png);">
+            <a class="source" href="http://talkingpointsmemo.com/idealab/cartodb-aims-to-be-the-instagram-of-maps">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-datasets.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-datasets.png);">
+            <h2>a dataset is like a file on your computer</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-new-dataset.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-new-dataset.png);">
+            <h2>shp, geojson, csv, ...</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-new-dataset.png);">
+            <h2>shapefiles <em>must be</em> zipped</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-maps.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-maps.png);">
+            <h2>like project in QGIS</h2>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-styling.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-styles.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-categorized.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-styles-categorized.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-graduated.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-styles-graduated.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-attribute-table.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-attribute-table-button.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-attribute-table.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-filter.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-widget-categorized.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-widget-average.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis-print-composer.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-publish.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-publish-link.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/carto-publish-public.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/stabilized-map.png);">
+            <a class="source" href="https://docker4data.carto.com/viz/766a0f32-1ea1-11e5-b267-0e49835281d6/public_map">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stabilized-data-link.png);">
+            <a class="source" href="https://docker4data.carto.com/viz/766a0f32-1ea1-11e5-b267-0e49835281d6/public_map">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stabilized-data-download.png);">
+            <a class="source" href="https://docker4data.carto.com/tables/changes_summary/public">source</a>
+        </div>
+
+        <div class="slide">
+            <h2><a href="inclass.html" target="_blank">in-class exercise, part 3</a></h2>
+        </div>
+
+        <div class="slide intermission"></div>
+
+        <div class="slide" style="background-image: url(img/google-bus-pinata.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/google-bus-pinata.png);">
+            <a href="http://allthingsd.com/20130506/demonstrators-smash-google-bus-pinata-in-san-francisco/">
+                Demonstrators Smash Google Bus Piñata in San Francisco
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-bus-final-overall.gif);">
+            <a class="source" href="http://stamen.com/zero1/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-bus-final-zoom.gif);">
+            <a class="source" href="http://stamen.com/zero1/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/google-bus-foursquare.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-bus-fieldpapers.png);">
+            <a class="source" href="http://stamen.com/zero1/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-bus-fieldpapers2.png);">
+            <a class="source" href="http://stamen.com/zero1/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-bus-fieldpapers2.png);">
+            <p style="background: rgba(255, 255, 255, 0.8);">"We enlisted people to go to stops, measure traffic and count people getting off and on and we hired bike messengers to see where the buses went..."</p>
+            <a class="source" href="http://stamen.com/zero1/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-bus-fieldpapers3.png);">
+            <a class="source" href="http://stamen.com/zero1/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-bus-fieldpapers3.png);">
+            <p style="background: rgba(255, 255, 255, 0.8);">"... The cyclists used Field Papers to transcribe the various routes and what they found out, which we recompiled back into a database of trips, stops, companies and frequency."</p>
+            <a class="source" href="http://stamen.com/zero1/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/stamen-bus-final-zoom.gif);">
+            <a class="source" href="http://stamen.com/zero1/">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fieldpapers-make-atlas.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/fieldpapers-print-atlas.png);">
+            <a class="source" href="http://fieldpapers.org/atlas.php?id=fhnp4qks#18/40.73649/-73.99715">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fieldpapers-page.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/walkingpapers-osm.jpg);">
+            <a class="source" href="http://wiki.openstreetmap.org/wiki/Walking_Papers">
+                source
+            </a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/fieldpapers-uploaded.png);">
+            <a class="source" href="http://fieldpapers.org/atlas.php?id=ncz5lrfs#17/40.67782/-73.96397">
+                source
+            </a>
+        </div>
+
+
+    </body>
+</html>
